@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  
+</head>
+<body>
+ <div class="navbar">
+   <div class="navbar-inner">
+     <a class="brand" href="/">SNCB Leak Check</a>
+     <ul class="nav">
+       <li class="inactive"><a href="/">Home</a></li>
+     </ul>
+   </div>
+ </div>
+
+ <div class="hero-unit">
+  <h4>You've been exposed ?</h4>
+
+  <p>A <span class="label">grey label</span> means that field was not exposed. An <span class="label label-warning">orange label</span> means that field has been exposed.</p>
+
+  <p><a target="_blank" class="btn-small btn btn-primary" href="http://twitter.com/intent/tweet?status=My%20personal%20details%20have%20been%20leaked%20by%20%40SNCBEurope.%20Check%20if%20you%20are%20also%20impacted%20http%3A%2F%2Fsncb.fredericjacobs.com%20%23SNCBgate%20%23NMBSgate">Tweet it!</a></p>
+
+</div>
+<table class="table">
+ <tr>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  <th>Birthdate</th>
+  <th>Email</th>
+  <th>Address</th>
+  <th>Phone</th>
+</tr>
+
+<%- tableContent %>
+
+</table>
+
+</body>
+</html>

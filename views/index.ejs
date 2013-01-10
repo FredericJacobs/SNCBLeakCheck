@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37342556-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+</head>
+<body>
+ <div class="navbar">
+   <div class="navbar-inner">
+     <a class="brand" href="#">SNCB Leak Check</a>
+     <ul class="nav">
+       <li class="active"><a href="/">Home</a></li>
+     </ul>
+   </div>
+ </div>
+
+ <div class="container">
+   
+   <div class="hero-unit">
+     <h1>SNCB Leak Check</h1>
+     <p>This tool allows you to find whether you were exposed or not the SNCB data leak that occured in December 2012. Try searching for your name to know if you were exposed. If your name is popular, look up your email.</p>
+     
+     <form class="form-inline" action="passenger">
+       <input type="text" class="input" name="firstname" required="required" placeholder="First Name">
+       <input type="text" class="input" name="lastname" required="required" placeholder="Lastname">
+       <button type="submit" class="btn">Search</button>
+     </form>
+     <p><i>If your name is popular, you might want to check using your email.</i></p>
+
+     <form class="form-inline" action="passenger">
+       <input type="text" class="input" name="email"placeholder="Email">
+       <button type="submit" class="btn">Search</button>
+     </form>
+
+   </div><!-- .hero-unit -->
+   
+   <div class="row">
+     <div class="span4">
+       <h2>Who ?</h2>
+       <p><b><a href="http://twitter.com/fredericjacobs">A citizen</a></b> that cares about data protection. He believes that you have the right to know whether you're exposed or not.</p>
+     </div><!-- .span4 -->
+     
+     <div class="span4">
+      <h2>What ?</h2>
+      <p>This has been build in a few hours with an accent on privacy protection.</p>
+    </div><!-- .span4 -->
+    
+    <div class="span4">
+     <h2>Donate</h2>
+     <p>Help the Electronic Frontier Foundation to defend your rights in the digital world.</p>
+     <a href="https://www.eff.org/join"><img src="https://www.eff.org/sites/default/files/EFF-Banner.jpg" alt="Join EFF!" border="0"></a><br />
+   </div><!-- .span4 -->
+   
+ </div><!-- .row -->
+</div><!-- .container -->
+</body>
+</html>
