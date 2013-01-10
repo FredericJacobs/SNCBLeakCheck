@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -50,10 +49,6 @@
   BUSINESS_TELEPHONE: Boolean,
   EMAIL: String
 });
-
- passenger_record_schema.methods.fullname = function () {
-  return this.FIRSTNAME + this.LASTNAME;
-}
 
 mongoose.model('Passenger_record', passenger_record_schema, 'passengers');
 
